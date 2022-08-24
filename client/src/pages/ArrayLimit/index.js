@@ -37,6 +37,11 @@ const ArrayLimit = () => {
         />
       </label>
 
+      <br />
+      <br />
+
+      <button type="submit">Calculate</button>
+
     </div>
 
 
