@@ -12,7 +12,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={ <RockPaperScissors /> } />
+        <Route path="/problem-1" element={ <RockPaperScissors /> } />
       </Routes>
     </BrowserRouter>
   );
