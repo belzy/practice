@@ -1,10 +1,9 @@
-import './App.css';
+import './main.css';
 import {
   ChoiceButton,
   RpsIcon,
-} from './components';
+} from './../../components';
 import { useState, useEffect } from 'react';
-
 
 const generateRandomChoice = () => {
   const choices = ['paper', 'rock', 'scissors']
@@ -21,7 +20,6 @@ const determineWinner = (userChoice, randomChoice) => {
    ) return 1;
    else return 2;
 };
-
 
 function App() {
   const [message, setMessage] = useState('Choose One');
