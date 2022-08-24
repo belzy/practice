@@ -3,7 +3,8 @@ const server = express();
 const path = require('path');
 
 // const PORT = 8080;
-const PORT = 443;
+// const PORT = 443;
+const PORT = 80;
 
 server.use('/', express.static(path.join(__dirname, 'client/build/')))
 
