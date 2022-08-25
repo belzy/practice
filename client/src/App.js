@@ -5,18 +5,20 @@ import {
   Route,
 } from "react-router-dom";
 import {
-  RockPaperScissors,
-  Home,
-  ArrayLimit,
+  RockPaperScissorsPage,
+  HomePage,
+  ArrayLimitPage,
+  ClockPage,
 } from './pages';
 
 const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route index path="/" element={ <Home /> } />
-        <Route path="/problem-1" element={ <RockPaperScissors /> } />
-        <Route path="/problem-2" element={ <ArrayLimit /> } />
+        <Route index path="/" element={ <HomePage /> } />
+        <Route path="/problem-1" element={ <RockPaperScissorsPage /> } />
+        <Route path="/problem-2" element={ <ArrayLimitPage /> } />
+        <Route path="/problem-3" element={ <ClockPage /> } />
       </Routes>
     </BrowserRouter>
   );

@@ -2,7 +2,7 @@ import './main.css';
 import {
   ChoiceButton,
   RpsIcon,
-} from './../../components';
+} from '../../components';
 import { useState, useEffect } from 'react';
 
 const generateRandomChoice = () => {
@@ -21,7 +21,7 @@ const determineWinner = (userChoice, randomChoice) => {
    else return 2;
 };
 
-function App() {
+function RockPaperScissorsPage() {
   const [message, setMessage] = useState('Choose One');
   const [round, setRound] = useState(0);
   const [choices, setChoices] = useState([]);
@@ -55,7 +55,7 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div className="rps-outer-container">
       <div className="rps-container">
         <h1>Welcome To Rock Paper Scissors!</h1>
 
@@ -87,4 +87,4 @@ function App() {
   );
 }
 
-export default App;
+export default RockPaperScissorsPage;

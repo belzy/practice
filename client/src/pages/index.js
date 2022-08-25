@@ -1,3 +1,4 @@
-export { default as RockPaperScissors } from './RockPaperScissors';
-export { default as Home } from './Home';
-export { default as ArrayLimit } from './ArrayLimit';
+export { default as RockPaperScissorsPage } from './RockPaperScissorsPage';
+export { default as HomePage } from './HomePage';
+export { default as ArrayLimitPage } from './ArrayLimitPage';
+export { default as ClockPage } from './ClockPage';

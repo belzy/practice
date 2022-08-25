@@ -1,0 +1,25 @@
+.clock-outer-container {
+  /* background-color: lightblue; */
+  background: url('../../assets/img/smooth-white-wave-background_52683-55288.png');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.clock-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 460px;
+}
+
+.colors {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 460px;
+}
