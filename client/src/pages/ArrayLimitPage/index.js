@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './main.css';
 
 // Test Array: [3, 27, 14, 16, 85, 100, 101,2, 7, 49, 33, 12, 29, 63, 8, 88, 73, 75, 6]
 
@@ -35,8 +36,8 @@ const ArrayLimitPage = () => {
   }
 
   return (
-    <div>
-      <label>
+    <div className='array-limit-container'>
+      <label style={{ marginBottom: '20px' }}>
         Array:<br />
         <input 
           name='arrayInput'
@@ -45,8 +46,8 @@ const ArrayLimitPage = () => {
           onChange={ handleChange }
         />
       </label>
-      <br /><br />
-      <label>
+
+      <label style={{ marginBottom: '20px' }}>
         Limit:<br />
         <input 
           name='limitInput'
@@ -57,14 +58,11 @@ const ArrayLimitPage = () => {
         />
       </label>
 
-      <br />
-      <br />
-
       <button 
         type="submit"
         onClick={ handleSubmit }
+        style={{ marginBottom: '20px' }}
       >Calculate</button>
-      <br /><br />
 
       { highest !== null && (<p>Highest: { highest }</p>) }
       { lowest !== null && (<p>Lowest: { lowest }</p>) }
